@@ -1,79 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Social Media]</title>
 </head>
+
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="header">
+      <div class="container">
+        <div class="header-title">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23.058</p>
+        </div>
+        <hr>
+        <div class="header-btn-theme">
+          <p>Dark Theme</p>
+          <div class="container-btn">
+            <input type="checkbox" class="switch" id="switch">
+            <label for="switch" class="lbl"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="followers">
+      <div class="container">
+        <div class="cards-followers--container">
+          <div class="card-follower">
+            <p class="card-follower__nickname"><span>LOGO</span>Nickname</p>
+            <p class="card-follower__number">####</p>
+            <p class="card-follower__textsecond">FOLLOWERS</p>
+            <p class=""><span>IconsRows</span>Today</p>
+          </div>
+          <div class="card-follower">
+            <p class="card-follower__nickname"><span>LOGO</span>Nickname</p>
+            <p class="card-follower__number">####</p>
+            <p class="card-follower__textsecond">FOLLOWERS</p>
+            <p class=""><span>IconsRows</span>Today</p>
+          </div>
+          <div class="card-follower">
+            <p class="card-follower__nickname"><span>LOGO</span>Nickname</p>
+            <p class="card-follower__number">####</p>
+            <p class="card-follower__textsecond">FOLLOWERS</p>
+            <p class=""><span>IconsRows</span>Today</p>
+          </div>
+          <div class="card-follower">
+            <p class="card-follower__nickname"><span>LOGO</span>Nickname</p>
+            <p class="card-follower__number">####</p>
+            <p class="card-follower__textsecond">FOLLOWERS</p>
+            <p class=""><span>IconsRows</span>Today</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="overview">
+      <div class="container">
+        <h2 class="overview-title">Overview -Today</h2>
+        <div class="cards-overview--container">
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-overview">
+            <p class="card-overview__type">Page Views <span>Icon</span></p>
+            <div class="card-overview__count">
+              <p>##</p>
+              <div>
+                <p><span>Icon</span> ##%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
