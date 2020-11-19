@@ -8,11 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Social Media]</title>
 </head>
 
-<body>
+<body data-dark>
   <main>
     <section class="header">
       <div class="container">
@@ -32,7 +33,7 @@
     </section>
     <section class="followers">
       <div class="container">
-        <div class="cards-followers--container">
+        <div data-dark class="cards-followers--container">
           <div class="card-follower">
             <p class="card-follower__nickname"><span>X</span>@nathanf</p>
             <p class="card-follower__number">1987</p>
@@ -62,8 +63,8 @@
     </section>
     <section class="overview">
       <div class="container">
-        <h2 class="overview-title">Overview -Today</h2>
-        <div class="cards-overview--container">
+        <h2 data-dark class="overview-title">Overview -Today</h2>
+        <div data-dark class="cards-overview--container">
           <div class="card-overview">
             <p class="card-overview__type">Page Views <span></span></p>
             <div class="card-overview__count">
@@ -140,6 +141,7 @@
       </div>
     </section>
   </main>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

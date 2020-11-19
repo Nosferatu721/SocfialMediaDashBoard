@@ -1,0 +1,33 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header hr {
+  display: none;
+}
+
+.header h1 {
+  font-size: 2.6rem;
+}
+
+.header .header-btn-theme {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Followers */
+
+.cards-followers--container {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-overview--container {
+  grid-template-columns: repeat(4, 1fr);
+}
