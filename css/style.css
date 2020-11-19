@@ -124,6 +124,7 @@ body {
 .card-follower .card-follower__nickname {
   color: hsl(228, 12%, 44%);
   font-weight: bold;
+  font-size: 1.2rem;
   margin: 2rem 0;
 }
 
@@ -153,6 +154,7 @@ body {
   color: var(--Lime-Green);
   font-weight: bold;
   margin: 0 0 2rem;
+  font-size: 1.2rem;
 }
 
 .card-follower .card-follower__news span {
@@ -209,4 +211,118 @@ body {
 
 .card-follower:nth-child(4) .card-follower__news {
   color: var(--Bright-Red);
+}
+
+/* Overview */
+
+.overview {
+  margin: 2rem 0;
+}
+
+.overview-title {
+  margin: 2rem 0;
+  color: hsl(228, 12%, 44%);
+  font-size: 2.4rem;
+}
+
+.cards-overview--container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card-overview {
+  background: hsl(227, 47%, 96%);
+  border-radius: 4px;
+  padding: 1rem 3rem;
+}
+
+.card-overview .card-overview__type {
+  color: hsl(228, 12%, 44%);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.card-overview .card-overview__type span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-overview .card-overview__count {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1.5rem 0;
+}
+
+.card-overview .card-overview__count > p {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.card-overview .card-overview__count > div {
+  color: var(--Lime-Green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-overview .card-overview__count > div p {
+  display: flex;
+  align-items: center;
+}
+.card-overview .card-overview__count > div span::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-overview:nth-child(2) .card-overview__count > div {
+  color: var(--Bright-Red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-overview:nth-child(2) .card-overview__count > div span::before {
+  background-image: url(../images/icon-down.svg);
+}
+
+.card-overview:nth-child(3) .card-overview__type span::before {
+  background-image: url(../images/icon-instagram.svg);
+}
+
+.card-overview:nth-child(4) .card-overview__type span::before {
+  background-image: url(../images/icon-instagram.svg);
+}
+
+.card-overview:nth-child(5) .card-overview__type span::before {
+  background-image: url(../images/icon-twitter.svg);
+}
+
+.card-overview:nth-child(6) .card-overview__type span::before {
+  background-image: url(../images/icon-twitter.svg);
+}
+
+.card-overview:nth-child(7) .card-overview__count div p,
+.card-overview:nth-child(8) .card-overview__count div p {
+  color: var(--Bright-Red);
+}
+
+.card-overview:nth-child(7) .card-overview__count > div span::before,
+.card-overview:nth-child(8) .card-overview__count > div span::before {
+  background-image: url(../images/icon-down.svg);
+}
+
+.card-overview:nth-child(7) .card-overview__type span::before,
+.card-overview:nth-child(8) .card-overview__type span::before {
+  background-image: url(../images/icon-youtube.svg);
 }
