@@ -97,11 +97,18 @@ body.darkTheme {
   transition: 0.3s ease-in-out;
 }
 
+@keyframes xd {
+  70% {
+    transform: scale(0.7);
+  }
+}
+
 .switch {
   display: none;
   visibility: hidden;
 }
 .switch:checked + .lbl::after {
+  animation: xd 0.3s;
   left: 36px;
   background: var(--Dark-Desaturated-Blue);
 }
@@ -161,7 +168,7 @@ body.darkTheme {
 .card-follower .card-follower__news {
   color: var(--Lime-Green);
   font-weight: bold;
-  margin: 0 0 2rem;
+  margin: 2rem 0;
   font-size: 1.2rem;
 }
 

@@ -1,12 +1,29 @@
 let btnSwitch = document.getElementById("switch");
+let selectors = document.querySelectorAll("[data-dark]");
 
-btnSwitch.checked = false;
+document.addEventListener("DOMContentLoaded", (e) => {
+  if (localStorage.getItem("theme") === null) {
+    localStorage.setItem("theme", "light");
+    defThemeMode(false, selectors);
+    btnSwitch.checked = false;
+  }
+
+  if (localStorage.getItem("theme") === "dark") defThemeMode(true, selectors);
+});
 
 btnSwitch.addEventListener("click", (e) => {
-  let selectors = document.querySelectorAll("[data-dark]");
+  defThemeMode(btnSwitch.checked, selectors);
   if (btnSwitch.checked) {
-    selectors.forEach((el) => el.classList.add("darkTheme"));
+    localStorage.setItem("theme", "dark");
   } else {
-    selectors.forEach((el) => el.classList.remove("darkTheme"));
+    localStorage.setItem("theme", "light");
   }
 });
+
+const defThemeMode = (tft, dataAttributes) => {
+  if (tft) {
+    dataAttributes.forEach((el) => el.classList.add("darkTheme"));
+  } else {
+    dataAttributes.forEach((el) => el.classList.remove("darkTheme"));
+  }
+};
